@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "clubears",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "clubears",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "clubears",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "clubears",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "clubears",
+    "public": false
+  },
+  "Club": {
+    "dataSource": "clubears",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "clubears",
+    "public": true
+  }
+}
